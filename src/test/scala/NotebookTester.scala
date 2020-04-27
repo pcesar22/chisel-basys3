@@ -17,6 +17,7 @@ class CombLogicTester(c: CombLogic) extends PeekPokeTester(c) {
     poke(c.io.in_b, in_b)
     poke(c.io.in_c, in_c)
     expect(c.io.out, in_a * in_b + in_c)
+    step(1);
   }
 }
 
